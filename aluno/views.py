@@ -3,7 +3,7 @@ from .models import Aluno,Curso,Cidade
 from .forms import AlunoForm, CursoForm, CidadeForm
 
 
-#CRUD CURSO
+#CRUD ALUNO
 
 def aluno_editar(request,id):
     aluno = get_object_or_404(Aluno,id=id)
