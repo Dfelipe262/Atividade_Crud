@@ -7,10 +7,10 @@ class AlunoAdmin(admin.ModelAdmin):
 
 @admin.register(Curso)
 class CursoAdmin(admin.ModelAdmin):
-    list_display=('nome',)
+    list_display=('nome_curso',)
 
 @admin.register(Cidade)
 class CidadeAdmin(admin.ModelAdmin):
-    list_display=('nome','sigla_estado',)
+    list_display=('nome_cidade','sigla_estado',)
 
 

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block center %}
+    <h2>Criar Cidade.</h2>
+       
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="nome_cidade" class="form-label">Nome</label>
+            {{ form.nome_cidade }}
+        </div>
+        
+        <div class="mb-3">
+            <label for="sigla_estado" class="form-label">Sigla do Estado</label>
+            {{ form.sigla_estado }}
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>    
+{% endblock %}
+   
