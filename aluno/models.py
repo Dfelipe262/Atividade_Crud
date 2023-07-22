@@ -6,13 +6,13 @@ class Cidade(models.Model):
     sigla_estado = models.CharField(max_length=2)
 
     def __str__(self):
-        return self.nome + " - " + self.sigla_estado 
+        return self.nome_cidade + " - " + self.sigla_estado 
 
 class Curso(models.Model):
     nome_curso = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.nome 
+        return self.nome_curso 
 
 class Aluno(models.Model):
     nome_aluno = models.CharField(max_length=150)

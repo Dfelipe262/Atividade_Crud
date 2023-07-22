@@ -15,7 +15,7 @@
     <tbody>
       {% for cidade in cidades %}  
       <tr>
-        <td>{{ cidade.nome }}</td>
+        <td>{{ cidade.nome_cidade }}</td>
         <td>{{ cidade.sigla_estado }}</td>
         <td>
           <a href="{% url 'cidade_editar' id=cidade.id %}" class="btn btn-primary btn-sm">Editar</a>

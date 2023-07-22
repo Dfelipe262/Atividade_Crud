@@ -28,7 +28,7 @@ urlpatterns = [
     path('aluno/listar',aluno_listar,name='aluno_listar'),
 
     path('cidade/',cidade_criar,name='cidade_criar'),
-    path('cidade/editar/<int:id>/',cidade_editar, name='ciade_editar'),
+    path('cidade/editar/<int:id>/',cidade_editar, name='cidade_editar'),
     path('cidade/remover/<int:id>/',cidade_remover,name='cidade_remover'),
     path('cidade/listar', cidade_listar,name='cidade_listar'),
 

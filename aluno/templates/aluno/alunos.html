@@ -20,8 +20,8 @@
       <tr>
         <td>{{ aluno.nome_aluno }}</td>
         <td>{{ aluno.email }}</td>
-        <td>{{ aluno.cidade.nome }}</td>
-        <td>{{ aluno.curso.nome }}</td>
+        <td>{{ aluno.cidade.nome_cidade }}</td>
+        <td>{{ aluno.curso.nome_curso }}</td>
         <td>
           <a href="{% url 'aluno_editar' id=aluno.id %}" class="btn btn-primary btn-sm">Editar</a>
           <a href="{% url 'aluno_remover' id=aluno.id %}" class="btn btn-danger btn-sm">Remover</a>
